@@ -8,7 +8,7 @@
   class="relative bg-[url('/src/assets/landingpage.jpg')] bg-cover bg-center bg-no-repeat"
 >
   <div
-    class="absolute inset-0 bg-transparent/75 bg-transparent from-black/95"
+    class="absolute inset-0 bg-transparent/50 bg-transparent from-black/85"
   ></div>
 
   <div
@@ -23,7 +23,7 @@
         The app offers movies, series, music, books, newspapers, podcasts at random to our customers to allow them to discover other media according to their tastes. It also offers a custom roulette wheel, with filters to allow them to find a medium similar to what they are looking for in particular.
       </p>
 
-      <div class="mt-8 flex flex-wrap text-center">
+      <div class="justify-center mt-8 flex flex-wrap text-center">
         <a
           href="#"
           class="block w-full rounded bg-blue px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
