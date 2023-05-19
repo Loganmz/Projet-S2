@@ -5,7 +5,7 @@
 
 <template>
 <section
-  class="relative bg-[url('/src/assets/landingpage.jpg')] bg-cover bg-center bg-no-repeat"
+  class="relative bg-[url('/src/assets/landingpage.jpg')]  bg-cover bg-center bg-no-repeat"
 >
   <div
     class="absolute inset-0 bg-transparent/50 bg-transparent from-black/85"

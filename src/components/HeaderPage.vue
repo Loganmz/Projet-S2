@@ -6,7 +6,7 @@ const menuIsOpen = ref(false)
 </script>
 
 <template>
-  <header class="bg-black flex items-center justify-between px-4 gap-8 h-20">
+  <header class=" relative bg-[#000] z-20 flex items-center justify-between px-4 gap-8 h-20">
     <a href="/">
       <IconLogo />
     </a>

@@ -7,7 +7,7 @@ import wheels from './components/wheels.vue'
 
 </script>
 
-<template>
+<template >
   <HeaderPage />
   <RouterView />
   <HeroPage />
