@@ -5,14 +5,14 @@
 
 <template>
 <section
-  class="relative bg-[url('/src/assets/landingpage.jpg')]  bg-cover bg-center bg-no-repeat"
+  class=" h-screen relative bg-[url('/src/assets/landingpage.jpg')]  bg-cover bg-center bg-no-repeat"
 >
   <div
     class="absolute inset-0 bg-transparent/50 bg-transparent from-black/85"
   ></div>
 
   <div
-    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-4 lg:pt-0"
+    class="pt-[200px] relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-4 lg:pt-0"
   >
     <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
       <h1 class="text-white text-3xl font-extrabold sm:text-5xl">
