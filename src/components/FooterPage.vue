@@ -14,16 +14,16 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue'
               <a href="/" class="mb-10 flex items-center">
                   <IconLogo />
               </a>
-              <p class="self-center text-3xs font-medium dark:text-white">
+              <p class="self-center text-3xs font-medium text-white">
                 The app offers films, series, music, books, newspapers, podcasts at 
               </p>
-              <p class="self-center text-3xs font-medium dark:text-white">
+              <p class="self-center text-3xs font-medium text-white">
                 random to our customers to allow them to discover other media 
               </p>
-              <p class="self-center text-3xs font-medium dark:text-white">
+              <p class="self-center text-3xs font-medium text-white">
                 according ttheir tastes. It also offers a custom roulette wheel, 
               </p>
-              <p class="self-center text-3xs font-medium dark:text-white">
+              <p class="self-center text-3xs font-medium text-white">
                 with filters to allow them to find a medium similar to what they are looking for in particular.
               </p>
           </div>
