@@ -20,7 +20,7 @@
       </h1>
 
       <p class="text-white mt-4 max-w-lg xs:text-xl/relaxed">
-        The app offers movies, series, music, books, newspapers, podcasts at random to our customers to allow them to discover other media according to their tastes. It also offers a custom roulette wheel, with filters to allow them to find a medium similar to what they are looking for in particular.
+        The app offers movies, series, music, books, newspapers, podcasts at random to our customers to allow them to discover other media according to their tastes. It also offers a custom wheel, with filters to allow them to find a medium similar to what they are looking for in particular.
       </p>
 
       <div class="justify-center mt-8 flex flex-wrap text-center">

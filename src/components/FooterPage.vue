@@ -21,7 +21,7 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue'
                 random to our customers to allow them to discover other media 
               </p>
               <p class="self-center text-3xs font-medium text-white">
-                according ttheir tastes. It also offers a custom roulette wheel, 
+                according ttheir tastes. It also offers a custom wheel, 
               </p>
               <p class="self-center text-3xs font-medium text-white">
                 with filters to allow them to find a medium similar to what they are looking for in particular.
@@ -32,10 +32,10 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue'
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Spin the wheels</h2>
                   <ul class="text-gray-600 text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">Try without attribute</a>
+                          <a href="" class="hover:underline">Try without attribute</a>
                       </li>
                       <li>
-                          <a href="https://tailwindcss.com/" class="hover:underline">Get the app</a>
+                          <a href="" class="hover:underline">Get the app</a>
                       </li>
                   </ul>
               </div>
@@ -43,19 +43,19 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue'
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">Pick what you want</h2>
                   <ul class="text-gray-600 text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Movies</a>
+                          <a href="" class="hover:underline ">Movies</a>
                       </li>
                       <li class="mb-4">
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Series</a>
+                          <a href="" class="hover:underline">Series</a>
                       </li>
                       <li class="mb-4">
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Podcast</a>
+                          <a href="" class="hover:underline">Podcast</a>
                       </li>
                       <li class="mb-4">
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Books</a>
+                          <a href="" class="hover:underline">Books</a>
                       </li>
                       <li class="mb-4">
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Filter</a>
+                          <a href="" class="hover:underline">Filter</a>
                       </li>
                   </ul>
               </div>
