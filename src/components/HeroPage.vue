@@ -8,7 +8,7 @@
   class=" h-screen relative bg-[url('/src/assets/landingpage.jpg')]  bg-cover bg-center bg-no-repeat"
 >
   <div
-    class="absolute inset-0 bg-transparent/50 bg-transparent from-black/85"
+    class="absolute inset-0 bg-transparent/50 from-black/85"
   ></div>
 
   <div
