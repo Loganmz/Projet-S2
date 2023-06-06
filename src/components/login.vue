@@ -66,44 +66,44 @@ const CreateAccount = async () => {
     <div class=" bg-black flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
       <div class="pt-10 w-full text-white max-w-md space-y-8 ">
         <div v-if="currentUser">
-          <h1>Bienvenue {{ currentUser?.name }}</h1>
+          <h1>welcome {{ currentUser?.name }}</h1>
           <div>
             <button type="button" @click="Logout"
-              class="rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">DÃ©connexion</button>
+              class="rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600">Disconnect</button>
   
           </div>
         </div>
         <div v-else>
-          <h1>{{ loginMode ? "Se connecter" : "S'inscrire" }}</h1>
+          <h1>{{ loginMode ? "login" : "signup" }}</h1>
           <div class="sm:col-span-2 sm:col-start-1 mt-4">
-            <label for="username" class="block text-sm font-medium leading-6 text-Orange">Adresse mail</label>
+            <label for="username" class="block text-sm font-medium leading-6 text-Orange">email</label>
             <div class="mt-2">
               <input v-model="username" type="text" name="username" id="username" autocomplete="none"
-                placeholder="Entrer une adresse mail "
+                placeholder="Enter email "
                 class=" px-2 block w-full rounded-md border-0 py-1.5 text-Orange shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6">
             </div>
           </div>
           <div class="sm:col-span-2 sm:col-start-1 mt-2">
-            <label for="password" class="block text-sm font-medium leading-6 text-Orange">Mot de passe</label>
+            <label for="password" class="block text-sm font-medium leading-6 text-Orange">password</label>
             <div class="mt-2">
               <input v-model="password" type="password" name="password" id="password" autocomplete="none"
-                placeholder="Entrer votre mot de passe "
+                placeholder="Enter password "
                 class=" px-2 block w-full rounded-md border-0 py-1.5 text-Orange shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue sm:text-sm sm:leading-6">
             </div>
           </div>
           <div v-if="loginMode">
             <div class="sm:col-span-2 sm:col-start-1 mt-2">
               <button type="button" @click="Login"
-                class="mr-3 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Se connecter</button>
+                class="mr-3 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Login</button>
   
               <button type="button" @click="loginMode = false"
-                class="rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">S'inscrire</button>
+                class="rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Signup</button>
   
             </div>
           </div>
           <div v-else>
             <div class="sm:col-span-2 sm:col-start-1 mt-2">
-              <label for="fullName" class="block text-sm font-medium leading-6 text-Orange">Nom</label>
+              <label for="fullName" class="block text-sm font-medium leading-6 text-Orange">Name</label>
               <div class="mt-2">
                 <input v-model="fullName" type="text" name="fullName" id="fullName" autocomplete="none"
                   placeholder="Enter Full Name "
@@ -112,11 +112,11 @@ const CreateAccount = async () => {
             </div>
             <div class="sm:col-span-2 sm:col-start-1 mt-2">
               <button type="button" @click="CreateAccount"
-                class="mr-3 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Sauvegarder
-                Nouvel utilisateur</button>
+                class="mr-3 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue">Save
+                New user</button>
   
               <button type="button" @click="loginMode = true"
-                class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Annuler
+                class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">return
               </button>
   
             </div>
