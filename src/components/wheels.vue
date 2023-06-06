@@ -1,4 +1,27 @@
 
+<script lang="ts">
+
+import IconWheel from '@/components/icons/IconWheel.vue';
+export default {
+    data() {
+        return {
+            isRotated: false
+        };
+    },
+    methods: {
+        rotateAndRedirect() {
+            this.isRotated = !this.isRotated;
+            if (this.isRotated) {
+                setTimeout(() => {
+                    this.$router.push("random");
+                }, 2000);
+            }
+        }
+    },
+    components: { IconWheel }
+};
+</script>
+
 
 <template>
    <div class="mx-auto w-full max-w-screen-lg p-4 py-6 lg:py-8">
@@ -16,7 +39,7 @@
     
     </div>
     
-            
+      
   <div class="flex flex-col items-center">
     
     
@@ -27,59 +50,26 @@
       xmlns="http://www.w3.org/2000/svg"
   
       />
+      <router-link v-if="isRotated" to="random">
+    </router-link>
   
       <button
       
-      @click="rotate"
+      @click="rotateAndRedirect"
       
       class="bg-blue text-white mb-6 mt-8 font-bold py-2 px-4 rounded-full"
     >
       spin it
     </button>
   </div>
+   
 </template>
-
-<script lang="ts">
-import IconWheel from '@/components/icons/IconWheel.vue';
-export default {
-    data() {
-        return {
-            isRotated: false,
-        };
-    },
-    methods: {
-        rotate() {
-            this.isRotated = !this.isRotated;
-        },
-    },
-    components: { IconWheel }
-};
-
-import { pb } from '@/backend'
-import type { MoviesResponse } from '@/pocketbase-types';
-import Card from '@/components/moviesCard.vue';
-import { ref } from 'vue';
-
-let movieListe: MoviesResponse[] = [];
-let randomMovie: MoviesResponse | null = null;
-const showRandomMovie = ref(false);
-
-const fetchMovieList = async () => {
-    movieListe = await pb.collection('movies').getFullList<MoviesResponse>();
-    randomMovie = movieListe[Math.floor(Math.random() * movieListe.length)];
-    console.log("le film aléatoire", randomMovie);
-};
-
-const displayRandomMovie = () => {
-    showRandomMovie.value = true;
-};
-
-fetchMovieList();
-</script>
 
 <style>
 .rotate-180 {
   transform: rotate(180deg);
-}
+
+  transition-duration: 1000ms;
+};
 </style>
 

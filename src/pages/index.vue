@@ -8,4 +8,5 @@ import wheels from '@/components/wheels.vue'
     <HeroPage />
     <aboutus />
     <wheels />
+    
 </template>
