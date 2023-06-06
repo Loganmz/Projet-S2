@@ -26,13 +26,15 @@ const menuIsOpen = ref(false)
         <li><RouterLink to="serie" class="block p-4 text-white">Series</RouterLink></li>
         <li><RouterLink to="podcast" class="block p-4 text-white">Podcast</RouterLink></li>
         <li><RouterLink to="book" class="block p-4 text-white">Book</RouterLink></li>
-        <li><RouterLink to="random" class="block p-4 text-white" href="">Filter</RouterLink></li>
+        
       </ul>
       <div class="flex items-center gap-4 px-4">
-        <a class="block p-4 text-white" href="">Sign In</a>
-        <button class="flex-1 p-3 none bg-blue font-bold text-white lg:flex-none lg:px-6px">
-          Log in
-        </button>
+        <RouterLink to="signup" class="block p-4 text-white" href="">Contact</RouterLink>
+        <RouterLink to="login">
+          <button class="flex-1 p-3 none bg-blue font-bold text-white lg:flex-none lg:px-6px">
+            Log in
+          </button>
+        </RouterLink>
       </div>
     </nav>
   </header>

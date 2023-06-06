@@ -2,12 +2,12 @@
 import { RandomMovies } from '@/backend';
 import moviesCard from '@/components/movies-card.vue';
 
-const unMovie = await RandomMovies()
-console.log("les movies", unMovie)
+const unMovies = await RandomMovies()
+console.log("les movies", unMovies)
 </script>
 
 <template>
     <div>
-        <moviesCard v-bind="unMovie"/>
+        <moviesCard v-bind="unMovies"/>
     </div>
 </template>
