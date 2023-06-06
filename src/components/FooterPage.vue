@@ -17,10 +17,10 @@ import IconLogo from '@/components/icons/IconLogo.vue'
                 random to our customers to allow them to discover other media 
               </p>
               <p class="self-center text-3xs font-medium text-white">
-                according ttheir tastes. It also offers Rou/RouterLink custom wheel, 
+                according ttheir tastes. It also offers custom wheel, 
               </p>
               <p class="self-center text-3xs font-medium text-white">
-                with filters to allow them to find Rou/RouterLink medium similar to what they are looking for in particular.
+                with filters to allow them to find medium similar to what they are looking for in particular.
               </p>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
