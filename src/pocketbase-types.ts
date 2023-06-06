@@ -5,6 +5,7 @@
 export enum Collections {
 	Books = "books",
 	Movies = "movies",
+	Series = "series",
 	Users = "users",
 }
 
@@ -50,12 +51,25 @@ export type BooksRecord = {
 export type MoviesRecord = {
 	title?: string
 	time?: number
+	trailer?: string
 	release_year?: number
 	genre?: string
 	filmer?: string
 	synopsis?: string
 	note?: number
 	attach?: string
+}
+
+export type SeriesRecord = {
+	title?: string
+	year?: number
+	age?: number
+	iMDb?: number
+	rotten_tomatoes?: number
+	netflix?: number
+	prime_video?: number
+	disney?: number
+	type?: number
 }
 
 export type UsersRecord = {
@@ -66,6 +80,7 @@ export type UsersRecord = {
 // Response types include system fields and match responses from the PocketBase API
 export type BooksResponse = Required<BooksRecord> & BaseSystemFields
 export type MoviesResponse = Required<MoviesRecord> & BaseSystemFields
+export type SeriesResponse = Required<SeriesRecord> & BaseSystemFields
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 // Types containing all Records and Responses, useful for creating typing helper functions
@@ -73,11 +88,13 @@ export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 export type CollectionRecords = {
 	books: BooksRecord
 	movies: MoviesRecord
+	series: SeriesRecord
 	users: UsersRecord
 }
 
 export type CollectionResponses = {
 	books: BooksResponse
 	movies: MoviesResponse
+	series: SeriesResponse
 	users: UsersResponse
 }

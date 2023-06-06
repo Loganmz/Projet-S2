@@ -5,7 +5,6 @@ import iconestar from '@/components/icons/iconestar.vue'
 const MoviesInfo: MoviesResponse = defineProps<MoviesResponse>();
 const img = MoviesInfo.attach
 const urlImg = img && pb.getFileUrl(MoviesInfo, img, { thumb: '100x200' })
-
 </script>
 <template>
     <div class=" m-4 flex flex-col items-center bg-gray-800 rounded-lg shadow sm:flex-row max-w-xl self-center  ">
@@ -20,13 +19,16 @@ const urlImg = img && pb.getFileUrl(MoviesInfo, img, { thumb: '100x200' })
             <div class="flex flex-row grid-col-2">
                 <iconestar />
                 <p class="mb-3 font-normal text-white ">{{ note }}/10</p>
+                <p class="mb-3 font-normal text-white "></p>
 
             </div>
             <div class="flex flex-row grid-col-2">
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ release_year }}</p>
-                <button class="w-48 bg-blue text-white mb-6 mt-8 font-bold py-2 px-4 rounded-full">
-                    trailer
-                </button>
+                <a :href="trailer" target="_blank" rel="noopener noreferrer">
+          <button class="w-48 bg-blue text-white mb-6 mt-8 font-bold py-2 px-4 rounded-full">
+            Trailer
+          </button>
+        </a>
             </div>
         </div>
     </div>

@@ -10,3 +10,8 @@ export async function RandomMovies() {
 export async function getOneMovies() {
   return await pb.collection('movies').getOne<MoviesResponse>('zpaysz48lnbc1s1')
 }
+
+export async function getAllMovies() {
+  const records = await pb.collection('movies').getFullList<MoviesResponse>()
+  return records
+}
