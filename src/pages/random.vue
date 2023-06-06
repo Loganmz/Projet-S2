@@ -4,6 +4,15 @@
         <Card v-if="showRandomMovie" v-bind="{ ...randomMovie }" />
         
     </div>
+    <RouterLink to="retry">
+    <div class="text-center">
+        <button
+        class="w-48 bg-blue text-white mb-6 mt-8 font-bold py-2 px-4 rounded-full"
+        >   
+        spin again
+        </button>
+    </div>
+    </RouterLink>
 </div>
 </template>
 

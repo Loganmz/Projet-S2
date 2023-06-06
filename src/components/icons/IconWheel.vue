@@ -1,5 +1,5 @@
 <template>
-<svg width="358" height="358" viewBox="0 0 358 358" fill="#3356ae" xmlns="http://www.w3.org/2000/svg">
+<svg width="358" height="358" viewBox="0 0 358 358" fill="#1D1D1B" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_534_1581)">
 <path d="M178.6 352.7C274.753 352.7 352.7 274.753 352.7 178.6C352.7 82.4472 274.753 4.5 178.6 4.5C82.4472 4.5 4.5 82.4472 4.5 178.6C4.5 274.753 82.4472 352.7 178.6 352.7Z" stroke="#1D1D1B" stroke-width="9" stroke-miterlimit="10"/>
 <path d="M178.6 154C183.6 154 188.1 155.6 191.8 158.4C192.1 158.6 192.4 158.4 192.4 158.1L178.8 35.4C178.8 35 178.1 35 178.1 35.4L164.8 158.1C164.8 158.4 165.1 158.6 165.4 158.4C169.1 155.6 173.7 154 178.6 154Z" fill="white" stroke="#1D1D1B" stroke-width="6" stroke-miterlimit="10"/>
