@@ -20,7 +20,7 @@ const urlImg = img && pb.getFileUrl(MoviesInfo, img, { thumb: '100x200' })
                 </div>
 
                 <div class="w-full sm:w-1/2 flex flex-col justify-between p-4">
-                    <h2 class="mb-2 text-sm font-bold text-gray-900 dark:text-white">{{ title }}</h2>
+                    <h2 class="mb-2 text-sm font-bold text-white dark:text-white">{{ title }}</h2>
                     <p class="mb-3 text-gray-700 dark:text-gray-400">{{ filmer }}</p>
                     <div class="flex-grow overflow-y-auto">
                         <p class="mb-3 text-white">{{ synopsis }}</p>

@@ -5,6 +5,7 @@
 export enum Collections {
 	Books = "books",
 	Movies = "movies",
+	Podcast = "podcast",
 	Series = "series",
 	Users = "users",
 }
@@ -60,16 +61,20 @@ export type MoviesRecord = {
 	attach?: string
 }
 
+export type PodcastRecord = {
+	name?: string
+	synopsis?: string
+	attach?: string
+}
+
 export type SeriesRecord = {
-	title?: string
-	year?: number
-	age?: number
-	iMDb?: number
-	rotten_tomatoes?: number
-	netflix?: number
-	prime_video?: number
-	disney?: number
-	type?: number
+	name?: string
+	synopsis?: string
+	realisator?: string
+	seasons?: number
+	episodes?: number
+	rating?: number
+	attach?: string
 }
 
 export type UsersRecord = {
@@ -80,6 +85,7 @@ export type UsersRecord = {
 // Response types include system fields and match responses from the PocketBase API
 export type BooksResponse = Required<BooksRecord> & BaseSystemFields
 export type MoviesResponse = Required<MoviesRecord> & BaseSystemFields
+export type PodcastResponse = Required<PodcastRecord> & BaseSystemFields
 export type SeriesResponse = Required<SeriesRecord> & BaseSystemFields
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
@@ -88,6 +94,7 @@ export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 export type CollectionRecords = {
 	books: BooksRecord
 	movies: MoviesRecord
+	podcast: PodcastRecord
 	series: SeriesRecord
 	users: UsersRecord
 }
@@ -95,6 +102,7 @@ export type CollectionRecords = {
 export type CollectionResponses = {
 	books: BooksResponse
 	movies: MoviesResponse
+	podcast: PodcastResponse
 	series: SeriesResponse
 	users: UsersResponse
 }
