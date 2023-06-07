@@ -28,7 +28,7 @@ export default {
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="text-center">
         <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-black rounded-full bg-teal-accent-400">
-            Find out more
+            Join us in a
           </p>
           <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-black sm:text-4xl sm:leading-none">
             NEW EXPERIENCE
