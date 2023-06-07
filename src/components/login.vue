@@ -64,7 +64,7 @@ const CreateAccount = async () => {
 
 <template>
     <div class=" bg-black flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
-      <div class="pt-10 w-full text-white max-w-md space-y-8 ">
+      <div class="pt-10 w-full text-gray-400 max-w-md space-y-8 ">
         <div v-if="currentUser">
           <h1>welcome {{ currentUser?.name }}</h1>
           <div>
